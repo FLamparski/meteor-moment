@@ -7,6 +7,8 @@ Package.on_use(function (api, where) {
     api.export('moment');
   }
   where = where || ['client', 'server'];
+  api.add_files('require-shim.js', 'server');
   api.add_files(['lib/moment/moment.js', 'lib/moment/locale/en-au.js', 'lib/moment/locale/en-gb.js'], where);
   api.add_files('export-moment.js', where);
+  api.add_files('revert-require-shim.js', 'server');
 });
