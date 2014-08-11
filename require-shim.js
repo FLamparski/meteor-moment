@@ -1,4 +1,4 @@
-// This is necessary to trick moment-timezone into believing it is in node, otherwise it doesn't fire the "onLoad" method it defines. 
+// This is necessary to trick the language files to believe they are running in node 
 (function(undefined) {
 
   var self;
